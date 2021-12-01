@@ -1,0 +1,18 @@
+.logo {
+  color: $colorAkcent;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+  text-decoration: none;
+
+  &__color--black {
+    color: $colorMain;
+  }
+
+  &__color--white {
+    color: $colorSecond;
+  }
+}

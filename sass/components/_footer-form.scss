@@ -1,0 +1,57 @@
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+  background-color: $colorFooter;
+  color: $colorDiscription;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+
+  background-color: $colorAkcent;
+  color: $colorSecond;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: $colorSecond;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $transitionTiming;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+  }
+}

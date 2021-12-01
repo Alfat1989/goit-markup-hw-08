@@ -1,0 +1,158 @@
+.modal-form {
+  width: 448px;
+
+  &__title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    cursor: pointer;
+  }
+
+  &__label {
+    display: inline-flex;
+    margin-bottom: 4px;
+
+    color: $colorDiscription;
+  }
+}
+
+.label-m {
+  display: block;
+}
+
+.modal-form__input {
+  padding: 12px 42px;
+  width: 448;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: border 250ms $transitionTiming;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorAkcent;
+    outline: none;
+  }
+}
+
+.modal-form__textarea {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorAkcent;
+    outline: none;
+  }
+}
+
+.modal-form__icon {
+  display: inline-flex;
+  position: absolute;
+  top: 70%;
+  left: 15px;
+  transform: translateY(-70%);
+
+  transition: fill 250ms $transitionTiming;
+
+  .modal-form__input:hover + &,
+  .modal-form__input:focus + & {
+    fill: $colorAkcent;
+  }
+}
+
+.conditions {
+  margin-bottom: 30px;
+  text-align: center;
+
+  &__link {
+    color: $colorAkcent;
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    position: absolute;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.conditions__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+
+  border: 2px solid $colorMain;
+  border-radius: 2px;
+
+  background-color: $colorSecond;
+  fill: $colorSecond;
+
+  .conditions__checkbox:checked + & {
+    background-color: $colorAkcent;
+    border: 0px;
+  }
+}
+
+// .conditions__checkbox:checked {
+//   width: 50px;
+//   height: 50px;
+// }
+
+.modal-form__button {
+  display: block;
+  padding: 10px 56px;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 4px;
+  border: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  background-color: $colorAkcent;
+  color: $colorSecond;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $transitionTiming;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
