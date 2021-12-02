@@ -1,57 +1,63 @@
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding: 200px 0px;
+// .hero {
+//   @media screen and (min-width: 1600px) {
+//     max-width: 1600px;
+//   }
 
-  &__title {
-    margin-bottom: 30px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: linear-gradient(
+//       to bottom,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/Img.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   text-align: center;
+//   padding: 200px 0px;
 
-    color: $colorSecond;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-}
+//   &__title {
+//     @media screen and (min-width: 480px) {
+//       font-size: 26px;
+//     }
+//     margin-bottom: 30px;
 
-.hero__button {
-  display: inline-block;
-  position: relative;
-  min-width: 200px;
-  height: 50px;
-  padding: 10px 32px;
+//     color: $colorSecond;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.3;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//   }
+// }
 
-  border-radius: 4px;
+// .hero__button {
+//   display: inline-block;
+//   position: relative;
+//   min-width: 200px;
+//   height: 50px;
+//   padding: 10px 32px;
 
-  color: $colorSecond;
-  background-color: $colorAkcent;
+//   border-radius: 4px;
 
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8em;
-  letter-spacing: 0.06em;
+//   color: $colorSecond;
+//   background-color: $colorAkcent;
 
-  overflow: hidden;
+//   font-size: 16px;
+//   font-weight: bold;
+//   font-size: 16px;
+//   line-height: 1.8em;
+//   letter-spacing: 0.06em;
 
-  cursor: pointer;
+//   overflow: hidden;
 
-  transition: background-color 250ms $transitionTiming;
+//   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-  }
-}
+//   transition: background-color 250ms $transitionTiming;
+
+//   &:hover,
+//   &:focus {
+//     background-color: #188ce8;
+//   }
+// }
