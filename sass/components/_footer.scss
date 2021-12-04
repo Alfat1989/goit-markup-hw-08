@@ -18,6 +18,15 @@
   }
 }
 
+.footer-container {
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .adress {
   margin-top: 20px;
   padding: 0;

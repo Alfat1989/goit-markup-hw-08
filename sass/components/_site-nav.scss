@@ -1,6 +1,13 @@
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 479px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+  }
+
   padding: 0;
 }
 

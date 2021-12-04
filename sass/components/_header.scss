@@ -20,6 +20,9 @@
 }
 
 .header-contact {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
   display: flex;
   justify-content: center;
   align-items: baseline;

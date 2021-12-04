@@ -1,6 +1,11 @@
 .section-works {
-  margin: 0;
-  padding-bottom: 94px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    margin: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {

@@ -18,7 +18,13 @@
   padding: 0;
 
   &__item {
-    width: 270px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
 
     &:not(:last-child) {
       margin-right: 30px;
