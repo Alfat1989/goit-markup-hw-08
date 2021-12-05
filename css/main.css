@@ -923,12 +923,9 @@ ul {
 }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px;
 }
 
 .footer__title {
@@ -941,12 +938,14 @@ ul {
 
 @media screen and (min-width: 480px) {
   .footer-container {
+    width: 480px;
     display: block;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-container {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

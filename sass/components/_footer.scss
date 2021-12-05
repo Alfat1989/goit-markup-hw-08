@@ -4,8 +4,11 @@
   background-color: #2f303a;
 
   &-container {
-    display: flex;
-    align-items: baseline;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    // display: flex;
+    // align-items: baseline;
   }
 
   &__title {
@@ -20,9 +23,11 @@
 
 .footer-container {
   @media screen and (min-width: 480px) {
+    width: 480px;
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 768px;
     display: flex;
   }
 }
