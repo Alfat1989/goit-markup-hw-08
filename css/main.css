@@ -863,6 +863,7 @@ ul {
 
 @media screen and (min-width: 480px) {
   .clients_item {
+    width: 210px;
     margin-right: 30px;
   }
 }
