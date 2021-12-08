@@ -1,13 +1,15 @@
 .section-works {
-  @media screen and (max-width: 480px) {
+  display: none;
+  @media screen and (min-width: 480px) {
     display: none;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    display: flex;
     margin: 0;
     padding-bottom: 94px;
   }
