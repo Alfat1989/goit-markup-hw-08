@@ -1,0 +1,39 @@
+.mobile-menu {
+  display: inline-block;
+  margin-left: auto;
+  border: 0;
+  background: none;
+
+  &__icon {
+    &--close {
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// .is-open .mobile-menu__icon--close {
+//   display: none;
+// }
+
+// .is-open .mobile-menu__icon--menu {
+//   display: block;
+// }
+
+.mobile-menu__icon {
+  &--menu {
+    .mobile-menu:hover &,
+    .mobile-menu:focus & {
+      fill: $colorAkcent;
+    }
+  }
+}
+
+.mobile-menu:hover .mobile-menu__icon--menu,
+.mobile-menu:focus .mobile-menu__icon--menu,
+.mobile-menu:hover .mobile-menu__icon--close,
+.mobile-menu:focus .mobile-menu__icon--close {
+  fill: $colorAkcent;
+}

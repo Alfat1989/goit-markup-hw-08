@@ -338,7 +338,7 @@ ul {
 }
 
 .header-section {
-  background-color: var(--bg-color);
+  background-color: #ffffff;
 }
 
 .header-section__nav, .header-section {
@@ -348,6 +348,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header-section__nav, .header-section {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1750,31 +1756,86 @@ ul {
   background-color: #188ce8;
 }
 
-.moblile-menu {
+.mobile-menu {
   display: inline-block;
   margin-left: auto;
   border: 0;
   background: none;
 }
 
-.moblile-menu__icon--close {
-  display: none;
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
-.is-open .moblile-menu__icon--close {
-  display: block;
-}
-
-.is-open .moblile-menu__icon--menu {
-  display: none;
-}
-
-.moblile-menu:hover .moblile-menu__icon--menu,
-.moblile-menu:focus
-.moblile-menu__icon--menu
-.moblile-menu:hover
-.moblile-menu__icon--close,
-.moblile-menu:focus .moblile-menu__icon--close {
+.mobile-menu:hover .mobile-menu__icon--menu,
+.mobile-menu:focus .mobile-menu__icon--menu {
   fill: #2196f3;
+}
+
+.mobile-menu:hover .mobile-menu__icon--menu,
+.mobile-menu:focus .mobile-menu__icon--menu,
+.mobile-menu:hover .mobile-menu__icon--close,
+.mobile-menu:focus .mobile-menu__icon--close {
+  fill: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #ffffff;
+}
+
+.mobile-menu__icon {
+  fill: black;
+}
+
+.mobile-list {
+  margin-bottom: 302px;
+}
+
+.mobile-list__link {
+  padding: 0;
+  color: #212121;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mobile-list__link--current {
+  color: #2196f3;
+}
+
+.mobile-contact__list {
+  margin-bottom: 64px;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+  padding: -10px;
+}
+
+.mobile-social_link {
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mobile-social_link--after::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
