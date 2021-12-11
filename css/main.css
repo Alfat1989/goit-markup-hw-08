@@ -333,6 +333,7 @@ ul {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -1747,5 +1748,33 @@ ul {
 
 .modal-form__button:hover, .modal-form__button:focus {
   background-color: #188ce8;
+}
+
+.moblile-menu {
+  display: inline-block;
+  margin-left: auto;
+  border: 0;
+  background: none;
+}
+
+.moblile-menu__icon--close {
+  display: none;
+}
+
+.is-open .moblile-menu__icon--close {
+  display: block;
+}
+
+.is-open .moblile-menu__icon--menu {
+  display: none;
+}
+
+.moblile-menu:hover .moblile-menu__icon--menu,
+.moblile-menu:focus
+.moblile-menu__icon--menu
+.moblile-menu:hover
+.moblile-menu__icon--close,
+.moblile-menu:focus .moblile-menu__icon--close {
+  fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -37,6 +37,15 @@
                         <a class="site-nav__link" href="">Контакты</a>
                     </li>
                 </ul>
+                <button type="button" class="moblile-menu is-open" aria-label="Переключатель мобильного меню"
+                    aria-expanded="false">
+                    <svg class="moblile-menu__icon" width="40px" height="40px">
+                        <use class="moblile-menu__icon--menu" href="./images/sprite.svg#mobile-open"></use>
+                        <use class="moblile-menu__icon--close" href="./images/sprite.svg#mobile-close"></use>
+                    </svg>
+
+                </button type="button">
+
             </nav>
             <!--Контакты в меню-->
             <ul class="header-contact">
@@ -558,8 +567,18 @@
         </div>
     </div>
 
-    <script src="./js/modal.js">
+    <button type="button" class="moblile-menu">
+        <svg class="moblile-menu__icon">
+            <use href="./images/sprite.svg#mobile-menu"></use>
+            <use href="./images/sprite.svg#mobile-menu-close"></use>
+        </svg>
 
+    </button type="button">
+
+    <script src="./js/modal.js">
+    </script>
+
+    <script src="./mobile-menu.js">
     </script>
 
 </body>
