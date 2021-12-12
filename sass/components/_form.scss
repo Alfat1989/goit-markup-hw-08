@@ -1,5 +1,5 @@
 .modal-form {
-  width: 448px;
+  width: 100%;
 
   &__title {
     margin-bottom: 12px;
@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 448px;
+    width: 100%;
     cursor: pointer;
   }
 
@@ -34,7 +34,7 @@
 
 .modal-form__input {
   padding: 12px 42px;
-  width: 448;
+  width: 100%;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -48,6 +48,13 @@
   &:focus {
     border: 1px solid $colorAkcent;
     outline: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }
 
@@ -89,7 +96,10 @@
   text-align: center;
 
   &__link {
-    color: $colorAkcent;
+    font-family: 12px;
+    &--second {
+      color: $colorAkcent;
+    }
   }
 
   &__label {

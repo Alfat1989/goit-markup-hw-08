@@ -37,14 +37,14 @@
                         <a class="site-nav__link" href="">Контакты</a>
                     </li>
                 </ul>
-                <button type="button" class="mobile-menu is-open" aria-label="Переключатель мобильного меню"
+                <button type="button" class="mobile-menu js-open-menu" aria-label="Переключатель мобильного меню"
                     aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="mobile-menu__icon" width="40px" height="40px">
                         <use class="mobile-menu__icon--menu" href="./images/sprite.svg#mobile-open"></use>
                         <!-- <use class="mobile-menu__icon--close" href="./images/sprite.svg#mobile-close"></use> -->
                     </svg>
 
-                </button type="button">
+                </button>
             </nav>
             <!--Контакты в меню-->
             <ul class="header-contact">
@@ -202,7 +202,15 @@
 
                     <li class="comand-list__item">
                         <div class="team">
-                            <img class="team__img" src="./images/img1.jpg" width="270" alt="Мужчина" />
+                            <img srcset="
+                                ./images/mobile/comand-1-450-img.jpg 450w, 
+                                ./images/mobile/comand-1-450-img@2x.jpg 900w,
+                                ./images/tablet/comand-1-354-img.jpg 354w,
+                                ./images/tablet/comand-1-354-img@2x.jpg 708w,
+                                ./images/desk/comand-1-270-img.jpg 270w,
+                                ./images/desk/comand-1-270-img@2x.jpg 540w,
+                                " class="team__img" src="./images/mobile/comand-1-450-img.jpg" width="270"
+                                alt="Мужчина" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                                 <p class="team__descript">Product Designer</p>
@@ -247,7 +255,15 @@
 
                     <li class="comand-list__item">
                         <div class="team">
-                            <img class="team__img" src="./images/img2.jpg" width="270" alt="Девушка" />
+                            <img srcset="
+                                ./images/mobile/comand-2-450img.jpg 450w, 
+                                ./images/mobile/comand-2-450img@2x.jpg 900w,
+                                ./images/tablet/comand-2-354-img.jpg 354w,
+                                ./images/tablet/comand-2-354-img@2x.jpg 708w,
+                                ./images/desk/comand-2-270-img.jpg 270w,
+                                ./images/desk/comand-2-270-img@2x.jpg 540w,
+                                " class="team__img" src="./images/img2.jpg" width="270" alt="Девушка"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Ольга Репина</h3>
                                 <p class="team__descript">Frontend Developer</p>
@@ -383,56 +399,56 @@
         </section>
 
         <!--Клиенты-->
-        <!-- <section class="clients">
-                <div class="container clients-container">
-                    <h2 class="section-title">Постоянные клиенты</h2>
-                    <ul class="clients__list">
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo3"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo4"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo5"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients__item">
-                            <a href="" class="clients__link">
-                                <svg class="clients__icon">
-                                    <use href="./images/sprite.svg#logo6"></use>
-                                </svg>
-                            </a>
-                        </li>
+        <section class="clients">
+            <div class="container clients-container">
+                <h2 class="section-title">Постоянные клиенты</h2>
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#logo6"></use>
+                            </svg>
+                        </a>
+                    </li>
 
-                    </ul>
-                </div>
-            </section> -->
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -552,8 +568,8 @@
                         <svg class="conditions__icon" width="16px" height="16px">
                             <use href="./images/sprite.svg#icon-check"></use>
                         </svg>
-                        <span>Соглашаюсь с рассылкой и принимаю
-                            <a class="conditions__link" href=""> Условия договора
+                        <span class="conditions__link">Соглашаюсь с рассылкой и принимаю
+                            <a class="conditions__link--second" href=""> Условия договора
                             </a>
                         </span>
                     </label>
@@ -566,19 +582,18 @@
         </div>
     </div>
 
-    <!-- <button type="button" class="moblile-menu">
-        <svg class="moblile-menu__icon">
-            <use href="./images/sprite.svg#mobile-menu"></use>
-            <use href="./images/sprite.svg#mobile-menu-close"></use>
-        </svg>
 
-    </button type="button"> -->
 
-    <div class="menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
 
-        <svg class="mobile-menu__icon" width="40px" height="40px">
-            <use class="mobile-menu__icon--close" href="./images/sprite.svg#mobile-close"></use>
-        </svg>
+        <div class="button-container">
+            <button type="button" class="mobile-menu js-close-menu" aria-label="Переключатель мобильного меню">
+                <svg class="mobile-menu__icon" width="40px" height="40px">
+                    <use class="mobile-menu__icon--close" href="./images/sprite.svg#mobile-close"></use>
+                </svg>
+            </button>
+        </div>
+
 
         <ul class="mobile-list">
             <li class="mobile-list_item">
@@ -592,10 +607,10 @@
             </li>
         </ul>
 
-        <ul class="mobile-contact__list">
+        <ul class="mobile-contact">
 
             <li class="mobile-contact__item">
-                <a class="mobile-contact__link" href="tel:+380961111111">
+                <a class="mobile-contact__link mobile-contact__link--big" href="tel:+380961111111">
                     +38 096 111 11 11
 
                 </a>
@@ -608,6 +623,7 @@
             </li>
 
         </ul>
+
         <ul class="mobile-social">
             <li class="mobile-social__item">
                 <a class="mobile-social_link mobile-social_link--after" href="">Instagram</a>
@@ -627,14 +643,10 @@
     <script src="./js/modal.js">
     </script>
 
-    <script src="./js/mobile-menu.js">
-    </script>
-
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous">
-
-        </script>
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 
 </body>

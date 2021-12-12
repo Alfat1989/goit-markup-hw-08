@@ -2,20 +2,35 @@
   position: fixed;
   top: 0;
   left: 0;
+  transform: translateX(100%);
   width: 100vw;
   height: 100vh;
 
-  padding-right: 40px;
+  padding-right: 15px;
   padding-left: 40px;
   background-color: $colorSecond;
+  z-index: 999;
+
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .mobile-menu__icon {
   fill: black;
+  &--close {
+    margin-left: auto;
+  }
 }
 
 .mobile-list {
-  margin-bottom: auto;
+  margin-bottom: 180px;
 }
 
 .mobile-list__link {
@@ -31,8 +46,25 @@
   }
 }
 
-.mobile-contact__list {
+.mobile-contact {
   margin-bottom: 64px;
+
+  &__item {
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+  &__link {
+    color: $colorDiscription;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    &--big {
+      font-size: 30px;
+      color: $colorAkcent;
+    }
+  }
 }
 
 .mobile-social {
