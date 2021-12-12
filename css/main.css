@@ -1797,7 +1797,7 @@ ul {
 }
 
 .mobile-list {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-list__link {
