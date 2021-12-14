@@ -162,7 +162,10 @@
 
                     <li class="works-list__item">
                         <div class="works">
-                            <img class="works__img" src="./images/box1.jpg" width="370"
+                            <img srcset="
+                                    ./images/box1.jpg 1x,
+                                    ./images/box@1.jpg 2x
+                                " class="works__img" src="./images/box1.jpg" width="370"
                                 alt="Рабочий стол с клавиатурой" />
                             <div class="works__title-container">
                                 <h3 class="works__title">Десктопные приложения</h3>
@@ -172,7 +175,10 @@
 
                     <li class="works-list__item">
                         <div class="works">
-                            <img class="works__img" src="./images/box2.jpg" width="370" alt="Ноутбук с телефоном" />
+                            <img srcset="
+                                    ./images/box2.jpg 1x,
+                                    ./images/box@2.jpg 2x
+                                " class="works__img" src="./images/box2.jpg" width="370" alt="Ноутбук с телефоном" />
                             <div class="works__title-container">
                                 <h3 class="works__title">Мобильные приложения</h3>
                             </div>
@@ -181,7 +187,10 @@
 
                     <li class="works-list__item">
                         <div class="works">
-                            <img class="works__img" src="./images/box3.jpg" width="370"
+                            <img srcset="
+                                    ./images/box3.jpg 1x,
+                                    ./images/box@3.jpg 2x
+                                " class="works__img" src="./images/box3.jpg" width="370"
                                 alt="Планшет с палитрой цветов" />
                             <div class="works__title-container">
                                 <h3 class="works__title">Дизайнерские решения</h3>
@@ -210,7 +219,8 @@
                                 ./images/desk/comand-1-270img.jpg 270w,
                                 ./images/desk/comand-1-270img@2x.jpg 540w
                                 " class="team__img" src="./images/mobile/comand-1-450-img.jpg" width="270"
-                                alt="Мужчина" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+                                alt="Мужчина"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                                 <p class="team__descript">Product Designer</p>
@@ -263,7 +273,7 @@
                                 ./images/desk/comand-2-270img.jpg 270w,
                                 ./images/desk/comand-2-270img@2x.jpg 540w
                                 " class="team__img" src="./images/mobile/comand-2-450img.jpg" width="270" alt="Девушка"
-                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Ольга Репина</h3>
                                 <p class="team__descript">Frontend Developer</p>
@@ -316,7 +326,8 @@
                                 ./images/desk/comand-3-270img.jpg 270w,
                                 ./images/desk/comand-3-270img@2x.jpg 540w
                                 " class="team__img" src="./images/mobile/comand-3-450-img.jpg" width="270"
-                                alt="Мужчина" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+                                alt="Мужчина"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Николай Тарасов</h3>
                                 <p class="team__descript">Marketing</p>
@@ -369,7 +380,8 @@
                                  ./images/desk/comand-4-270img.jpg 270w,
                                  ./images/desk/comand-4-270img@2x.jpg 540w
                                  " class="team__img" src="./images/mobile/comand-4-450img.jpg" width="270"
-                                alt="Мужчина" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+                                alt="Мужчина"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" />
                             <div class="team__content">
                                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                                 <p class="team__descript">UI Designer</p>
@@ -585,7 +597,7 @@
                     <label class="conditions__label">
                         <input class="conditions__checkbox" type="checkbox" name="condition" value="yes">
                         <svg class="conditions__icon" width="16px" height="16px">
-                            <use href="./images/sprite.svg#icon-check"></use>
+                            <use class="conditions__checkbox-icon" href="./images/sprite.svg#icon-check"></use>
                         </svg>
                         <span class="conditions__link">Соглашаюсь с рассылкой и принимаю
                             <a class="conditions__link--second" href=""> Условия договора
