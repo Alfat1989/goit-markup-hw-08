@@ -22,6 +22,7 @@
 .portfolio__items {
   padding: 0;
   width: 100%;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
     align-items: center;
@@ -40,6 +41,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 370px;
+    margin-bottom: 0;
     max-width: calc((100%-60px) / 3);
     &:not(:nth-child(3n + 3)) {
       margin-right: 30px;
